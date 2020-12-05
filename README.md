@@ -9,6 +9,8 @@ Detailed documentation is in the "docs" directory.
 Quick start
 -----------
 ### 0. install
+
+    pip install requests
     pip install zibal-django
     
 ### 1. start
