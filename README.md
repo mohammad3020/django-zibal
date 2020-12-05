@@ -73,7 +73,7 @@ def request_test(request):
 ``` 
 
 
-### 4.2 user callback meth
+### 4.2 user callback method
 excellent ! So far, the user has been sent to the bank page and has made his payment successful or unsuccessful. It will now be returned to our site for us to confirm.
 Here we first write a view Django function and then define it in the urls.py 
 
@@ -93,7 +93,7 @@ def callback(request):
 All calculations are done and the message of successful or unsuccessful payment is shown to the user in raw form (by HttpResponse method), provided that you see that like the previous series, you can use all Django features such as Django Template, etc. for a better display.
 
 
-###5. Database
+### 5. Database
 In this package, there is a model called PurchaseHistory that stores all the information from the time the user is sent to the bank until his return. You will quantify a lot of information by calling the Request method in Section 4.1 with its input arguments.
 Now you can use Django ORM to query your desired queries on this database and perform your operations! For example, in section 4.2, after the user confirms, you have a variable called purchase_history_object, which is an object of the paid model.
 
