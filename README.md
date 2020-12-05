@@ -42,7 +42,7 @@ from django.http import HttpResponse
 from django.shortcuts import render, redirect
 from zibal.zb import Zibal as zb
 
-merchant = zibal # example : merchant = 8g8xx74718f4341b02503xx8
+merchant = "zibal" # example : merchant = "8g8xx74718f4341b02503xx8"
 
 ``` 
 
