@@ -65,7 +65,7 @@ def request_test(request):
     callback_url = "http://example.com/zibal/callback/"
     
     zb_object = zb(merchant)
-    data = zb_obj.request(callback_url ,order , amount , mobile , description , request.user )
+    data = zb_object.request(callback_url ,order , amount , mobile , description , request.user )
     if data['status'] == "successful":
         return redirect(data['start_pay_url'])
     else:
